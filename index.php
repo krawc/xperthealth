@@ -18,7 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<?php echo get_template_part('template-parts/content', 'aboutus'); ?>
-
+			<?php echo get_template_part('template-parts/content', 'ourphilosophy'); ?>
+			<?php echo get_template_part('template-parts/content', 'ourservices'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

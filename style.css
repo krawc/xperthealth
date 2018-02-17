@@ -41,7 +41,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -287,7 +286,8 @@ html {
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  outline: none; }
 
 body {
   background: #fff;
@@ -668,11 +668,41 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.heading {
+  text-align: center;
+  padding: 2em 0em 0em;
+  margin: 0;
+  font-size: 3em; }
+
+.thin {
+  font-weight: 300; }
+
+.bold {
+  font-weight: 500; }
+
+.thick {
+  font-weight: 700; }
+
+.padding-left {
+  padding-left: 3em; }
+
 .sticky {
   display: block; }
 
 .hentry {
   margin: 0 0 1.5em; }
+
+.padding-none {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.margin-none {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-right: 0px; }
 
 .updated:not(.published) {
   display: none; }
@@ -686,24 +716,39 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
-.slider .slide {
-  position: relative; }
-  .slider .slide h1 {
-    text-align: center;
-    position: absolute;
-    top: 4em;
-    width: 100%;
-    font-size: 3em;
-    font-weight: 900;
-    color: #fff; }
-  .slider .slide h3 {
-    text-align: center;
-    position: absolute;
-    bottom: 2em;
-    width: 100%;
-    font-size: 1.8em;
-    color: #fff;
-    font-weight: 300; }
+.slider {
+  position: relative;
+  overflow: hidden; }
+  .slider .slide {
+    position: relative; }
+    .slider .slide h1 {
+      text-align: center;
+      position: absolute;
+      top: 4em;
+      width: 100%;
+      font-size: 3em;
+      font-weight: 900;
+      color: #fff; }
+    .slider .slide h3 {
+      text-align: center;
+      position: absolute;
+      bottom: 2em;
+      width: 100%;
+      font-size: 1.8em;
+      color: #fff;
+      font-weight: 300; }
+    .slider .slide img {
+      width: 100%; }
+    .slider .slide:after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      margin-left: -200%;
+      height: 400%;
+      width: 400%;
+      border-radius: 100%;
+      border: 100px solid #e5e4ec; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -715,16 +760,150 @@ a {
   display: block; }
 
 /*--------------------------------------------------------------
-## Comments
+## About Us partial
 --------------------------------------------------------------*/
 #aboutUs {
-  background: #e5e4ec; }
-  #aboutUs .heading {
-    text-align: center;
-    margin: 2em 0em;
-    font-size: 3em; }
-  #aboutUs .thin {
-    font-weight: 300; }
+  background: #e5e4ec;
+  color: #004982; }
+  #aboutUs #aboutUs-heading {
+    margin-bottom: -1.5em;
+    position: relative;
+    z-index: 100; }
+  #aboutUs #weCare {
+    padding: 4em 0em 1em;
+    font-size: 2.5em;
+    max-width: 70%; }
+  #aboutUs p {
+    font-size: 18px;
+    max-width: 85%; }
+  #aboutUs .quote {
+    margin: 3.5em 0em 2em; }
+    #aboutUs .quote blockquote {
+      font-style: italic;
+      margin: 0;
+      padding: 1em 0em;
+      font-size: 20px;
+      position: relative; }
+      #aboutUs .quote blockquote:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        width: 40px;
+        height: 30px;
+        background: url("assets/first quote.png") no-repeat; }
+      #aboutUs .quote blockquote:after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        right: 150px;
+        width: 40px;
+        height: 30px;
+        background: url("assets/end quote.png") no-repeat; }
+    #aboutUs .quote small {
+      font-style: italic;
+      font-size: 18px; }
+
+#techSci {
+  background: #004982 url("assets/Athlete.png") no-repeat;
+  background-position: 12% 100%;
+  color: #e1e3ea; }
+  #techSci .tech-header {
+    font-size: 40px;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+    color: #fff; }
+  #techSci .tech-subheader, #techSci .letUs-subheader {
+    font-size: 26px;
+    margin-bottom: 3em; }
+  #techSci .tech-content--col {
+    margin-bottom: 8em; }
+
+#letUs {
+  background: url("assets/Group 1.png") no-repeat;
+  color: #e1e3ea; }
+  #letUs .letUs-content {
+    padding-bottom: 15vw; }
+  #letUs .letUs-header {
+    font-size: 40px;
+    margin-top: 4em;
+    margin-bottom: 0.2em;
+    color: #fff; }
+  #letUs .letUs-subheader {
+    font-size: 26px;
+    margin-bottom: 3em; }
+
+/*--------------------------------------------------------------
+## Our Philosophy partial
+--------------------------------------------------------------*/
+#ourPhilosophy {
+  color: #004982; }
+  #ourPhilosophy .bold {
+    padding: 1em 3em;
+    font-weight: 700; }
+  #ourPhilosophy p {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0em 3em; }
+  #ourPhilosophy #infographic-circle {
+    padding: 4em; }
+
+/*--------------------------------------------------------------
+## Our Services partial
+--------------------------------------------------------------*/
+#ourServices-intro {
+  background: #004982;
+  color: #fff;
+  padding-bottom: 5em; }
+  #ourServices-intro .bold {
+    padding: 1.5em 1em 0.5em;
+    font-weight: 700; }
+  #ourServices-intro p.copy {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0em 3em 3em; }
+  #ourServices-intro .images {
+    position: relative; }
+    #ourServices-intro .images img {
+      height: 22em;
+      object-fit: cover;
+      width: 100%; }
+    #ourServices-intro .images .overlay {
+      background: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      transition: all 0.15s ease-in;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #ourServices-intro .images .overlay:hover {
+        background: rgba(0, 0, 0, 0.6); }
+      #ourServices-intro .images .overlay a {
+        font-size: 12px;
+        text-decoration: underline; }
+
+#ourServices-red {
+  background: #df4545 url("assets/OurServicesRed.png") no-repeat;
+  background-position: 100% 0%;
+  background-size: contain;
+  color: #e1e3ea; }
+  #ourServices-red .ourServices-red-content {
+    padding-bottom: 15vw; }
+  #ourServices-red .ourServices-red-header {
+    font-size: 40px;
+    margin-top: 4em;
+    margin-bottom: 0.2em;
+    color: #fff; }
+  #ourServices-red .ourServices-red-subheader {
+    font-size: 26px;
+    margin-bottom: 3em; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

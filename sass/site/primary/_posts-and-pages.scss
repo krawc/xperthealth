@@ -1,9 +1,45 @@
+.heading {
+	text-align: center;
+	padding: 2em 0em 0em;
+	margin: 0;
+	font-size: 3em;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.thick {
+	font-weight: 700;
+}
+.padding-left {
+	padding-left: 3em;
+}
+
 .sticky {
 	display: block;
 }
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.padding-none {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.margin-none {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
 }
 
 .updated:not(.published) {
@@ -22,6 +58,8 @@
 }
 
 .slider{
+	position:relative;
+	overflow: hidden;
 	.slide{
 		position: relative;
 		h1{
@@ -41,6 +79,20 @@
 			font-size: 1.8em;
 			color: #fff;
 			font-weight: 300;
+		}
+		img{
+			width: 100%;
+		}
+		&:after{
+			content: "";
+	    position: absolute;
+	    bottom: -100px;
+	    left: 50%;
+	    margin-left: -200%;
+	    height: 400%;
+	    width: 400%;
+	    border-radius: 100%;
+	    border: 100px solid #e5e4ec;
 		}
 	}
 }

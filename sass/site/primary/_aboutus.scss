@@ -1,15 +1,94 @@
+
 #aboutUs {
-
 	background: #e5e4ec;
-
-.heading {
-	text-align: center;
-	margin: 2em 0em;
-	font-size: 3em;
+	color: #004982;
+#aboutUs-heading{
+	margin-bottom: -1.5em;
+	position: relative;
+	z-index: 100;
 }
 
-.thin {
-	font-weight: 300;
+#weCare{
+	padding: 4em 0em 1em;
+	font-size: 2.5em;
+	max-width: 70%;
 }
 
+p {
+	font-size: 18px;
+	max-width: 85%;
+}
+
+
+.quote {
+	margin: 3.5em 0em 2em;
+
+blockquote {
+	font-style: italic;
+	margin: 0;
+	padding: 1em 0em;
+	font-size: 20px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 10px;
+		left: -50px;
+		width: 40px;
+		height: 30px;
+		background: url('assets/first quote.png') no-repeat;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 10px;
+		right: 150px;
+		width: 40px;
+		height: 30px;
+		background: url('assets/end quote.png') no-repeat;
+	}
+}
+small {
+	font-style: italic;
+	font-size: 18px;
+}
+}
+}
+
+#techSci {
+	background: #004982 url('assets/Athlete.png') no-repeat;
+	background-position: 12% 100%;
+	color: #e1e3ea;
+	.tech-header {
+		font-size: 40px;
+		margin-top: 2em;
+		margin-bottom: 0.2em;
+		color: #fff;
+	}
+	.tech-subheader, .letUs-subheader {
+		font-size: 26px;
+		margin-bottom: 3em;
+	}
+	.tech-content--col {
+		margin-bottom: 8em;
+	}
+
+}
+
+#letUs {
+	background: url('assets/Group 1.png') no-repeat;
+	color: #e1e3ea;
+	.letUs-content {
+		padding-bottom: 15vw;
+	}
+	.letUs-header {
+		font-size: 40px;
+		margin-top: 4em;
+		margin-bottom: 0.2em;
+		color: #fff;
+	}
+	.letUs-subheader {
+		font-size: 26px;
+		margin-bottom: 3em;
+	}
 }
