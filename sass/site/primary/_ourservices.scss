@@ -63,3 +63,118 @@
 		margin-bottom: 3em;
 	}
 }
+
+#ourServices-blue {
+	background: #004982;
+	color: #fff;
+	padding-top: 4em;
+	.services-header {
+		font-size: 2.5em;
+	}
+	#knee {
+		margin-top: -3em;
+	}
+	.narrow {
+		padding-top: 3em;
+	}
+}
+
+#ourServices-profiles {
+	background: #e1e1e1;
+	padding-bottom: 3em;
+	.cta-header {
+		padding: 4em 0em;
+	}
+	.full-grey {
+		color: #28323c;
+		text-transform: uppercase;
+	}
+	.profile {
+		background: #fff;
+		padding-bottom: 2em;
+		margin-bottom: 4em;
+		.profile-heading {
+			color: #df4545;
+			margin-top: 3em;
+			font-size: 1.6em;
+		}
+		.profile-copy {
+			font-size: 1.2em;
+		}
+		.profile-icon {
+			margin: 5% auto 3% 20%;
+		}
+		.profile-goal {
+			font-size: 2em;
+		}
+		.profile-goalDescr{
+			font-size: 1em;
+			padding-right: 20%;
+		}
+
+	}
+}
+
+#forCompanies {
+	background: #004982 url('assets/forCompanies.png') no-repeat;
+	background-size: contain;
+	color: #fff;
+	.forCompanies-content {
+		padding: 8em 0 8em 3em;
+	}
+	.forCompanies-header {
+		font-size: 40px;
+		margin-bottom: 0.2em;
+		color: #fff;
+	}
+	.forCompanies-subheader {
+		font-size: 26px;
+		margin-bottom: 3em;
+	}
+}
+
+#growBusiness {
+	background: #df4545;
+	color: #fff;
+	padding: 3em 1em;
+	.growBusiness-bridgeRunner {
+		margin-top: -10em;
+	}
+}
+
+#programs{
+	background: #f5f5f5;
+	.cta-header {
+		padding: 4em 0em;
+		text-transform: uppercase;
+	}
+	.program-panel{
+		background: #fff;
+		padding: 2em;
+		margin: 2em 0em 2em 3em;
+	.program-name {
+		text-transform: uppercase;
+		color: #004982;
+	}
+	.program-content {
+		margin-left: -40px;
+	}
+	.program-descr {
+		margin-bottom: 0px;
+	}
+	.program-icon {
+		margin-left: -80px;
+	}
+	.more {
+		padding-top: 2em;
+		text-decoration: underline;
+		a {
+			color: #000;
+		}
+	}
+	}
+	#programsCopy {
+		font-size: 1.1em;
+		padding: 3em 1em;
+	}
+}

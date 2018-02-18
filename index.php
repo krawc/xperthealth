@@ -20,9 +20,13 @@ get_header(); ?>
 			<?php echo get_template_part('template-parts/content', 'aboutus'); ?>
 			<?php echo get_template_part('template-parts/content', 'ourphilosophy'); ?>
 			<?php echo get_template_part('template-parts/content', 'ourservices'); ?>
+			<?php echo get_template_part('template-parts/content', 'membership'); ?>
+			<?php echo get_template_part('template-parts/content', 'contactus'); ?>
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
 
-//get_footer();
+get_footer();

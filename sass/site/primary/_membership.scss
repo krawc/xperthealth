@@ -1,0 +1,65 @@
+#membership-pre {
+		color: #004982;
+	.heading {
+		margin-bottom: 2em;
+	}
+	.membership-preImage {
+		padding-left: 2em;
+	}
+	.membership-preInfo {
+		padding-left: 5em;
+		padding-right: 3em;
+	}
+	.membership-head {
+		text-transform: uppercase;
+	}
+}
+
+#memberships-table {
+	margin-top: 4em;
+	.table-container {
+		padding: 0em 2em;
+	}
+	#theTable {
+		table-layout: fixed;
+		border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #bcbec0;
+		text-align: center;
+		padding: 0 1em;
+	}
+	td {
+		border-right: 1px solid #bcbec0;
+		border-bottom: 1px solid #bcbec0;
+		padding: 1.2em 1.8em;
+	}
+	.legend {
+		background: /* gradient can be an image */
+			linear-gradient(
+				to left,
+				#0a7bc0 0%,
+				#8d5975 47%,
+				#e14f4f 100%
+			)
+		no-repeat;
+		border-radius: 30px 30px 0px 0px;
+		th {
+			padding: 1.2em 1.8em;
+			color: #fff;
+			font-weight: 700;
+			border-right: 1px solid #bcbec0;
+			border-bottom: 1px solid #bcbec0;
+			&:first-of-type{
+				border-top-left-radius: 30px;
+			}
+			&:last-of-type{
+				border-top-right-radius: 30px;
+			}
+		}
+	}
+	.long {
+		text-align: left;
+		font-size: 16px;
+	}
+}

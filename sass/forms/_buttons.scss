@@ -20,3 +20,19 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.wireBtn {
+	border-image: linear-gradient(to left, #0a7bc0 0%, #8d5975 50%, #e14f4f 100%);
+	padding: 1.5em 3em;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 10px;
+	background: transparent;
+	border-image-slice: 1;
+	border-radius: 10px;
+	-webkit-background-clip: text!important;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to left, #0a7bc0 0%, #8d5975 50%, #e14f4f 100%);
+
+}

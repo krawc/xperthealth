@@ -13,18 +13,21 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'xperthealth' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'xperthealth' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'xperthealth' ), 'xperthealth', '<a href="http://konradkrawczyk.com">Konrad Krawczyk</a>' );
-			?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="row site-footer">
+		<div class="col-xs-12 col-md-8 offset-md-2">
+			<hr>
+			<div class="row">
+				<div class="col-xs-12 col-md-3">
+					<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/assets/logo_footer.png">
+				</div>
+				<div class="col-xs-12 col-md-3 offset-md-6">
+					<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/assets/social icons.png">
+				</div>
+			</div>
+			<p class="copyright">
+				<?php _e('© 2017 XpertHealth. All rights reserved 2016 © XpertHealth', 'xperthealth'); ?>
+			</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

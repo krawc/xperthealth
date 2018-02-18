@@ -11,8 +11,8 @@
 	<div class="col-xs-12 col-md-10 offset-md-1">
 		<h1 id="aboutUs-heading" class="heading thin"><?php _e('ABOUT US', 'xperthealth');?></h1>
 		<div class="row">
-			<div class="col-xs-12 col-md-5 col-image" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/image_derk.png); background-size: contain; background-repeat: no-repeat;">
-				<!-- <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image_derk.png"> -->
+			<div class="col-xs-12 col-md-5 col-image">
+				<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image_derk.png">
 			</div>
 			<div class="col-xs-12 col-md-6 padding-left col-content">
 				<h2 id="weCare" class="thick"><?php _e('WE CARE ABOUT YOUR HEALTH', 'xperthealth'); ?> </h2>
